@@ -1,0 +1,58 @@
+@use "../util" as u;
+.card {
+  border-radius: 30px;
+  width: 400px;
+  overflow: hidden;
+  text-align: center;
+
+  .details {
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+
+    .annualPlan {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      align-items: center;
+      background-color: var(--very-plate_blue);
+      padding: 1rem;
+      border-radius: 15px;
+
+      .icon {
+        width: 60px;
+      }
+      .plan {
+        margin-top: 1rem;
+        display: inline;
+        text-align: left;
+
+        span {
+          display: inline-block;
+          font-weight: 500;
+          color: var(--Desaturated-blue);
+          font-size: medium;
+          margin-right: 1rem;
+        }
+      }
+      .link {
+        grid-column: 2 span;
+      }
+    }
+
+    button {
+      padding: 1rem 2rem;
+      border-style: none;
+      background-color: var(--Dark-blue);
+      color: white;
+      font-family: u.$redhat-font;
+      font-weight: u.$fw-700;
+      font-size: large;
+      border-radius: 0.7rem;
+    }
+
+    .cancel_order {
+      color: var(--Desaturated-blue);
+    }
+  }
+}

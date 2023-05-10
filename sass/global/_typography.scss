@@ -1,0 +1,22 @@
+@use '../util' as u;
+
+h1{
+    margin-top: 0;
+    font-family: u.$redhat-font;
+    font-weight: u.$fw-900;
+}
+
+h3{
+    margin-top: 0;
+}
+
+p{
+    margin-top: 0;
+    font-family: u.$inter-font;
+    font-weight: u.$fw-500;
+}
+
+span{
+    margin: 0;
+}
+
